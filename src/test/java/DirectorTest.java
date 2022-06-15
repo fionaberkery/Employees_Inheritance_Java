@@ -19,7 +19,13 @@ public class DirectorTest {
     }
 
     @Test
-    public void directorHasNiNimber(){
+    public void directorNameCanBeChanged(){
+        director.setName("Tina");
+        assertEquals("Tina", director.getName());
+    }
+
+    @Test
+    public void directorHasNiNumber(){
         assertEquals("JM645634", director.getNiNumber());
     }
 
@@ -47,7 +53,7 @@ public class DirectorTest {
 
     @Test
     public void directorCanGetAPayBonus(){
-        assertEquals("Your pay bonus is £80.5", director.payBonus());
+        assertEquals("Your pay bonus is £161.0", director.payBonus());
     }
 
 }

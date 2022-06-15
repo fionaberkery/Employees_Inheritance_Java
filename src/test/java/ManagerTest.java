@@ -18,6 +18,12 @@ public class ManagerTest {
     }
 
     @Test
+    public void managerNameCanBeChanged(){
+        manager.setName("Tiger");
+        assertEquals("Tiger", manager.getName());
+    }
+
+    @Test
     public void managerHasNiNumber(){
         assertEquals("JM9903747B", manager.getNiNumber());
     }
